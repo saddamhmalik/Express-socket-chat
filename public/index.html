@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/0e0e80dfe3.js" crossorigin="anonymous"></script>
+  <title>ChatWave</title>
+
+</head>
+<body>
+<div id="chat-container">
+  <div class="header">
+    <h1 class="header-text">ChatWave</h1>
+    <h6 class="online">&nbsp;&nbsp;Online: <span id="online"></span></h6>
+  </div>
+  <div class="message-container" id="message-container">
+
+  </div>
+
+  <div id="user-input">
+    <input type="text" id="message-input" placeholder="Type your message...">
+    <button id="send-button">Send <i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha512-Dz4zO7p6MrF+VcOD6PUbA08hK1rv0hDv/wGuxSUjImaUYxRyK2gLC6eQWVqyDN9IM1X/kUA8zkykJS/gEVOd3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script  src="/socket.io/socket.io.js" ></script>
+<script src="./main.js"></script>
+</body>
+</html>
